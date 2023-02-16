@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\PortfoliosController;
+use App\Http\Controllers\MainPortfolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PortfoliosController::class, 'index'])->name('home');
 Route::get('/admin/dashboard', [PortfoliosController::class, 'dashboard'])->name('admin.dashboard');
-Route::get('/admin/main', [PortfoliosController::class, 'main'])->name('admin.main');
+Route::get('/admin/main', [MainPortfolioController::class, 'index'])->name('admin.main');
 Route::get('/admin/service', [PortfoliosController::class, 'service'])->name('admin.service');
 Route::get('/admin/portfolio', [PortfoliosController::class, 'portfolio'])->name('admin.portfolio');
 Route::get('/admin/about', [PortfoliosController::class, 'about'])->name('admin.about');

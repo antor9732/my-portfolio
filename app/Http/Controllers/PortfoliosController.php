@@ -12,9 +12,6 @@ class PortfoliosController extends Controller
     public function dashboard() {
         return view('portfolios.dashboard');
     }
-    public function main() {
-        return view('portfolios.main');
-    }
     public function service() {
         return view('portfolios.service');
     }
