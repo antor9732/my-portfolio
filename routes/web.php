@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PortfoliosController::class, 'index'])->name('home');
 Route::get('/admin/dashboard', [PortfoliosController::class, 'dashboard'])->name('admin.dashboard');
 Route::get('/admin/main', [MainPortfolioController::class, 'index'])->name('admin.main');
+Route::post('/admin/main', [MainPortfolioController::class, 'update'])->name('admin.main.update');
 Route::get('/admin/service', [PortfoliosController::class, 'service'])->name('admin.service');
 Route::get('/admin/portfolio', [PortfoliosController::class, 'portfolio'])->name('admin.portfolio');
 Route::get('/admin/about', [PortfoliosController::class, 'about'])->name('admin.about');

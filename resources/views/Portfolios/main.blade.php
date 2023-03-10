@@ -9,7 +9,9 @@
             <li class="breadcrumb-item active"><a href="{{ route('admin.dashboard') }}">Main</a></li>
         </ol>
 
-        
+        <form action="{{ route('admin.main.update')}}" method="post" enctype="multipart/form-data">
+          @csrf
+
         <div class="row">
           <div class="form-group col-md-3 mt-3">
             <h3>Background Image</h3>
@@ -30,8 +32,12 @@
               <input type="file" id="resume" name="resume" value="{{url($main->resume)}}">
             </div>
           </div>
+          
         </div>
+        <input type="submit" name="submit" class="btn  btn-primary mt-5">
+      </form>
     </div>
+  
   </main>
 
 @endsection  

@@ -40,7 +40,7 @@
             <div class="container">
                 <div class="masthead-subheading">Welcome To My Website!</div>
                 <div class="masthead-heading text-uppercase">This Is Md Mahmudul Hasan</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Download Resume</a>
             </div>
         </header>
         <!-- Services-->
